@@ -52,7 +52,7 @@
                 to Excellence</h4>
 
             <div class="mt-3 grid space-y-3 text-sm">
-                <p>
+                <p class="dark:text-white">
                     At Ice Home Development & Construction, our commitment lies in consistently surpassing client
                     expectations through exceptional general construction and funding services. We prioritize
                     excellence, innovation, and unwavering professionalism, fostering community growth while nurturing
