@@ -20,7 +20,7 @@
                 <x-label for="name" class="dark:text-black" value="{{ __('Name') }}" />
                 <x-input id="name" type="text" name="name"
                     class="mt-1 block w-full dark:bg-gray-300 dark:border-gray-400/30 " placeholder="e.g. John Traore"
-                    autocomplete="name" required autofocus />
+                    autocomplete="name" required  />
                 <div>
                     @error('name')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -31,7 +31,7 @@
                 <x-label for="telephone" class="dark:text-black" value="{{ __('Telephone') }}" />
                 <x-input id="name" type="tel" name="telephone"
                     class="mt-1 block w-full dark:bg-gray-300 dark:border-gray-400/30 " placeholder="e.g. +233 632 5536"
-                    required autofocus />
+                    required  />
                 <div>
                     @error('telephone')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -42,7 +42,7 @@
                 <x-label for="email" class="dark:text-black" value="{{ __('Email Address') }}" />
                 <x-input id="name" type="email" name="email"
                     class="mt-1 block w-full dark:bg-gray-300 dark:border-gray-400/30 "
-                    placeholder="e.g. john.traore@gmail.com" required autofocus />
+                    placeholder="e.g. john.traore@gmail.com" required  />
                 <div>
                     @error('email')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -54,7 +54,6 @@
 
                 <textarea
                 required
-                autofocus
                 name="description"
                 placeholder="{{ __('How may we help you?') }}"
                 class="block w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm"
@@ -80,17 +79,7 @@
             </div>
 
         </div>
-        {{-- <div class="form-group{{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
 
-            <div class="w-full">
-
-                @if ($errors->has('g-recaptcha-response'))
-                    <span class="help-block">
-                        <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
-                    </span>
-                @endif
-            </div>
-        </div> --}}
     </form>
 </div>
 

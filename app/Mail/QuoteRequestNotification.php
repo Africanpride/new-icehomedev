@@ -2,12 +2,13 @@
 
 namespace App\Mail;
 
+use App\Models\Quotation;
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
 class QuoteRequestNotification extends Mailable
 {
@@ -16,10 +17,12 @@ class QuoteRequestNotification extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    // public $quotation;
+    public function __construct(Public Quotation $quotation)
     {
-        //
+        $this->quotation = $quotation;
     }
+
 
     /**
      * Get the message envelope.
@@ -37,7 +40,7 @@ class QuoteRequestNotification extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'emails.quote',
         );
     }
 

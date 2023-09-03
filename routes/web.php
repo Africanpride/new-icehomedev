@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\QuotationController;
+use App\Models\Quotation;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,10 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('test', function() {
+Route::get('test', function () {
     return view('test');
 });
-Route::get('test2', function() {
+Route::get('test2', function () {
     return view('test2');
 });
 Route::get('/', [PagesController::class, 'home'])->name('home');
@@ -30,7 +31,7 @@ Route::get('contact', [PagesController::class, 'contact'])->name('contact');
 Route::get('privacy', [PagesController::class, 'privacy'])->name('privacy');
 Route::get('terms', [PagesController::class, 'terms'])->name('terms');
 Route::post('contact-form', [PagesController::class, 'contactForm'])->name('contact-form');
-Route::resource('quotation', QuotationController::class)->only(['store','destroy']);
+Route::resource('quotation', QuotationController::class)->only(['store', 'destroy']);
 
 Route::middleware([
     'auth:sanctum',
@@ -40,4 +41,14 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+});
+
+
+Route::get('email', function () {
+
+    $quotation =  Quotation::first();
+
+    // dd($quotation);
+
+    return view('emails.quote', compact('quotation'));
 });

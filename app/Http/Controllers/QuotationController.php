@@ -42,13 +42,14 @@ class QuotationController extends Controller
 
         $quotation = Quotation::create($validated);
 
-        $quotation->notify(new newQouteRequest($quotation));
+        // $quotation->notify(new newQouteRequest($quotation));
 
 
         // // Dispatch the event
         // event(new QuoteRequestMade($quotation));
 
         // // Send the email
+        Mail::to($quotation->email)->send(new QuoteRequestNotification($quotation));
         Mail::to('webmaster@icehomedev.com')->send(new QuoteRequestNotification($quotation));
 
 

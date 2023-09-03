@@ -228,7 +228,7 @@
                     <a class="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200" href="#">
                         <x-lucide-linkedin class="text-current w-5 h-5" />
                     </a>
-                    <a class="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200" href="#">
+                    <a class="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200" target="_blank" href="https://twitter.com/icehomedev">
                         <x-lucide-twitter class="text-current w-5 h-5" />
                     </a>
                     <a class="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200" href="#">
