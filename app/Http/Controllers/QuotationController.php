@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Quotation;
 use Illuminate\Http\Request;
 use App\Events\QuoteRequestMade;
+use App\Mail\NewLead;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\QuoteRequestNotification;
 use App\Notifications\newQouteRequest;
@@ -49,10 +50,8 @@ class QuotationController extends Controller
         // event(new QuoteRequestMade($quotation));
 
         // // Send the email
+        Mail::to('webmaster@icehomedev.com')->send(new NewLead($quotation));
         Mail::to($quotation->email)->send(new QuoteRequestNotification($quotation));
-        Mail::to('webmaster@icehomedev.com')->send(new QuoteRequestNotification($quotation));
-
-
 
         return redirect()->back()->with('success', ' "Request for Quote" received successfully.');
     }

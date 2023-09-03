@@ -75,7 +75,7 @@
             </div>
             <div>
                 <x-button
-                    class="w-full bg-yellow-600 dark:bg-gray-950 dark:hover:bg-black dark:hover:text-white  ">{{ __('Submit Request') }}</x-button>
+                    class="w-full bg-yellow-600 dark:bg-gray-900 dark:hover:bg-gray-950 dark:hover:text-white  ">{{ __('Submit Request') }}</x-button>
             </div>
 
         </div>

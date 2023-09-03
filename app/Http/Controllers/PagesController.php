@@ -65,6 +65,10 @@ class PagesController extends Controller
     {
         return view('about');
     }
+    public function career()
+    {
+        return view('career');
+    }
 
     public function projects()
     {

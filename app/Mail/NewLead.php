@@ -10,19 +10,17 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class QuoteRequestNotification extends Mailable
+class NewLead extends Mailable
 {
     use Queueable, SerializesModels;
 
     /**
      * Create a new message instance.
      */
-    // public $quotation;
     public function __construct(Public Quotation $quotation)
     {
         $this->quotation = $quotation;
     }
-
 
     /**
      * Get the message envelope.
@@ -30,7 +28,7 @@ class QuoteRequestNotification extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Quote Request Notification',
+            subject: 'New Quote Request',
         );
     }
 
@@ -40,7 +38,7 @@ class QuoteRequestNotification extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.quotemail',
+            view: 'emails.teamnotification',
         );
     }
 

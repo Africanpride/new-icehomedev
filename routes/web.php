@@ -23,6 +23,7 @@ Route::get('test2', function () {
     return view('test2');
 });
 Route::get('/', [PagesController::class, 'home'])->name('home');
+Route::get('career', [PagesController::class, 'career'])->name('career');
 Route::get('maintenance', [PagesController::class, 'maintenance'])->name('maintenance');
 Route::get('about', [PagesController::class, 'about'])->name('about');
 Route::get('projects', [PagesController::class, 'projects'])->name('projects');
@@ -50,5 +51,5 @@ Route::get('email', function () {
 
     // dd($quotation);
 
-    return view('emails.quote', compact('quotation'));
+    return view('emails.teamnotification', compact('quotation'));
 });
