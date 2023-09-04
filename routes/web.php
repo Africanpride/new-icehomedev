@@ -51,5 +51,5 @@ Route::get('email', function () {
 
     // dd($quotation);
 
-    return view('emails.teamnotification', compact('quotation'));
+    return view('emails.quotemail', compact('quotation'));
 });

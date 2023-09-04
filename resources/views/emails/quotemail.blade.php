@@ -21,12 +21,13 @@
     <div class="font-sans text-gray-900 dark:text-gray-100 antialiased">
         <!-- component -->
         <section class="max-w-7xl px-4 py-8 mx-auto bg-white dark:bg-gray-900 space-y-4">
-            <header>
+            <header style="text-align: center;">
                 <a href="{{ route('home') }}">
-                    <img class="w-auto mx-auto h-24 sm:h-24" src="{{ asset('images/logo.png') }}"
-                        alt="Ice Home Development & Construction">
+                    <img src="{{ asset('images/logo.png') }}" alt="Ice Home Development & Construction"
+                        style="width: auto; margin: 0 auto; height: 6rem; max-height: 6rem;">
                 </a>
             </header>
+
 
             <main class="mt-8">
                 <h2 class="mt-6 text-gray-700 dark:text-gray-200">{{ __('Hi ') }}{{ $quotation->name ?? '!' }},</h2>
@@ -35,13 +36,13 @@
                     {{ __('Thank you for sharing a brief description of your needs with us. We appreciate your interest in Ice Home Development & Construction. Our team will carefully review your requirements, and we will be in touch shortly to discuss your project in more detail and provide you with a customized quote.') }}
                 </p>
 
-                <div class="max-w-4xl container">
+                {{-- <div class="max-w-4xl container">
                     <iframe class="w-full aspect-video shadow-lg my-10 rounded-lg"
                         src="https://www.youtube.com/embed/L6Jwa7al8os" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen>
                     </iframe>
-                </div>
+                </div> --}}
 
                 <p class="mt-2 text-gray-600 dark:text-gray-300">
                     Best regards, <br>

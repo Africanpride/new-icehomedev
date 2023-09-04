@@ -21,10 +21,10 @@
     <div class="font-sans text-gray-900 dark:text-gray-100 antialiased">
         <!-- component -->
         <section class="max-w-3xl px-6 py-8 mx-auto bg-white dark:bg-gray-900">
-            <header>
+            <header style="text-align: center;">
                 <a href="{{ route('home') }}">
-                    <img class="w-auto mx-auto h-24 sm:h-24" src="{{ asset('images/logo.png') }}"
-                        alt="Ice Home Development & Construction">
+                    <img src="{{ asset('images/logo.png') }}" alt="Ice Home Development & Construction"
+                        style="width: auto; margin: 0 auto; height: 6rem; max-height: 6rem;">
                 </a>
             </header>
 
