@@ -40,7 +40,7 @@
                         We're
                         hiring</span></p>
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                        href="/sitemap">Sitemap</a></p>
+                        href="/sitemap.xml">Sitemap</a></p>
 
 
             </div>
