@@ -16,12 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('test', function () {
-    return view('test');
-});
-Route::get('test2', function () {
-    return view('test2');
-});
+// Route::get('test', function () {
+//     return view('test');
+// });
+// Route::get('test2', function () {
+//     return view('test2');
+// });
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('career', [PagesController::class, 'career'])->name('career');
 Route::get('maintenance', [PagesController::class, 'maintenance'])->name('maintenance');
@@ -45,11 +45,11 @@ Route::middleware([
 });
 
 
-Route::get('email', function () {
+// Route::get('email', function () {
 
-    $quotation =  Quotation::first();
+//     $quotation =  Quotation::first();
 
-    // dd($quotation);
+//     // dd($quotation);
 
-    return view('emails.quotemail', compact('quotation'));
-});
+//     return view('emails.quotemail', compact('quotation'));
+// });
