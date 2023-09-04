@@ -61,7 +61,7 @@
                 <div class="space-y-4">
                     <div class="max-w-3xl">
                         <p>
-                            This email was sent to contact@merakiui.com. If you'd rather not receive this kind of email,
+                            This email was sent to {{  $quotation->email }}. If you'd rather not receive this kind of email,
                             you can unsubscribe or manage your email preferences.
                         </p>
                     </div>

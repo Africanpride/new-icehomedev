@@ -48,20 +48,20 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="border border-gray-300 px-4 py-2">Name</td>
+                                <td class="border border-gray-300 px-4 py-2">Name:</td>
                                 <td class="border border-gray-300 px-4 py-2">{{ $quotation->name }}</td>
                             </tr>
                             <tr>
-                                <td class="border border-gray-300 px-4 py-2">Telephone</td>
+                                <td class="border border-gray-300 px-4 py-2">Telephone:</td>
                                 <td class="border border-gray-300 px-4 py-2"><a href="tel:{{ $quotation->telephone }}">{{ $quotation->telephone }}</a></td>
                             </tr>
                             <tr>
-                                <td class="border border-gray-300 px-4 py-2">Email</td>
+                                <td class="border border-gray-300 px-4 py-2">Email:</td>
                                 <td class="border border-gray-300 px-4 py-2"><a href="mailto:{{ $quotation->email }}">{{ $quotation->email }}</a></td>
                             </tr>
                             <tr>
-                                <td class="border border-gray-300 px-4 py-2">Request Description</td>
-                                <td class="border border-gray-300 px-4 py-2">{{ $quotation->description }}</td>
+                                <td class="border border-gray-300 px-4 py-2">Request Description: </td>
+                                <td class="border border-gray-300 px-4 py-2">&MediumSpace;{{ $quotation->description }}</td>
                             </tr>
                         </tbody>
                     </table>
