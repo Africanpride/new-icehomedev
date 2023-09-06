@@ -50,7 +50,7 @@ class QuotationController extends Controller
         // event(new QuoteRequestMade($quotation));
 
         // // Send the email
-        Mail::to('webmaster@icehomedev.com')->send(new NewLead($quotation));
+        Mail::to('info@icehomedev.com')->send(new NewLead($quotation));
         Mail::to($quotation->email)->send(new QuoteRequestNotification($quotation));
 
         return redirect()->back()->with('success', ' "Request for Quote" received successfully.');

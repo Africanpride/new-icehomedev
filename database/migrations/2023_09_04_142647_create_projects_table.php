@@ -12,7 +12,24 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('projects', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id');
+            $table->string('name');
+            $table->text('description')->nullable();
+            $table->string('status')->nullable();
+            $table->decimal('budget', 10, 2)->nullable();
+            $table->string('project_manager')->nullable();
+            $table->text('team_members')->nullable();
+            $table->text('tasks')->nullable();
+            $table->text('milestones')->nullable();
+            $table->text('documents')->nullable();
+            $table->text('dependencies')->nullable();
+            $table->string('priority')->nullable();
+            $table->string('location')->nullable();
+            $table->text('resources')->nullable();
+            $table->string('client_contact')->nullable();
+            $table->text('notes')->nullable();
+            $table->text('tags')->nullable();
+            $table->boolean('archived')->default(false);
             $table->timestamps();
         });
     }

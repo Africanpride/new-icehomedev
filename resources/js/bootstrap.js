@@ -30,3 +30,20 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     forceTLS: (import.meta.env.VITE_PUSHER_SCHEME ?? 'https') === 'https',
 //     enabledTransports: ['ws', 'wss'],
 // });
+
+
+// const $images = document.querySelectorAll('.revealing-image');
+
+// $images.forEach(($image) => {
+//     $image.animate({
+//         opacity: [0, 1],
+//         clipPath: ['inset(45% 20% 45% 20%)', 'inset(0% 0% 0% 0%)'],
+//     }, {
+//         fill: 'both',
+//         timeline: new ViewTimeline({
+//             subject: $image,
+//         }),
+//         rangeStart: 'entry 10%',
+//         rangeEnd: 'cover 20%',
+//     });
+// });

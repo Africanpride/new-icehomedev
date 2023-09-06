@@ -114,7 +114,7 @@
                 <li>
                     <div href="#" class="relative block group">
                         <img src="{{ asset('images/services/service050.jpg') }}" alt="{{ __('IceHomeDev Railways Project') }}"
-                            class="object-cover w-full transition duration-500 aspect-square rounded-2xl" />
+                            class=" object-cover w-full transition duration-500 aspect-square rounded-2xl" />
 
                         <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
                             {{-- <h3 class="text-xl font-medium text-white">Casual Trainers</h3> --}}
@@ -130,7 +130,7 @@
                 <li>
                     <div class="relative block group">
                         <img src="{{ asset('images/services/service007.jpg') }}" alt="{{ __('IceHomeDev Railways Project') }}"
-                            class="object-cover w-full transition duration-500 aspect-square rounded-2xl" />
+                            class=" object-cover w-full transition duration-500 aspect-square rounded-2xl" />
 
                         <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
                             {{-- <h3 class="text-xl font-medium text-white">Winter Jumpers</h3> --}}
@@ -146,7 +146,7 @@
                 <li class="md:col-span-2 md:col-start-2 md:row-span-2 md:row-start-1">
                     <div class="relative block group">
                         <img src="{{ asset('images/services/service002.jpg') }}" alt="{{ __('IceHomeDev Railways Project') }}"
-                            class="object-cover object-top  w-full transition duration-500 aspect-square rounded-2xl" />
+                            class=" object-cover object-top  w-full transition duration-500 aspect-square rounded-2xl" />
 
                         <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
                             {{-- <h3 class="text-xl font-medium text-white">Services</h3> --}}
